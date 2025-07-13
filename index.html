@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro de Comportamientos</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+  <div class="container fade-in">
+    <h1 class=" fade-in">Registro de Puntos</h1>
+
+    <div class="player1 fade-in" id="yanet">
+      <h2>👧 Yanet</h2>
+      <p>**Puntos Iniciales:** 100</p>
+      <p><strong>Puntos Finales:</strong> <span id="yanet-puntos">100</span></p>
+      <button onclick="updatePoints('yanet', 'resta')" class="btn restar">💢 Restar 1 por Mal Comportamiento</button>
+      <button onclick="updatePoints('yanet', 'suma')" class="btn sumar">🌟 Sumar 1 por Buen Comportamiento</button>
+    </div>
+
+    <div class="player2 fade-in" id="vale">
+      <h2>👧 Vale</h2>
+      <p>**Puntos Iniciales:** 100</p>
+      <p><strong>Puntos Finales:</strong> <span id="vale-puntos">100</span></p>
+      <button onclick="updatePoints('vale', 'resta')" class="btn restar">💢 Restar 1 por Mal Comportamiento</button>
+      <button onclick="updatePoints('vale', 'suma')" class="btn sumar">🌟 Sumar 1 por Buen Comportamiento</button>
+    </div>
+
+    <div id="resultados" class="fade-in">
+      <h3>🎁 <span style="color:#d63384;">Recompensas:</span></h3>
+      <p id="recompensa-yanet">Recompensa Yanet: 500 Robux</p>
+      <p id="recompensa-vale">Recompensa Vale: 500 Robux</p>
+    </div>
+
+    <button onclick="reiniciarPuntos()" class="fade-in" style="background-color: #ff6961; margin-top: 10px;">
+      🔄 Reiniciar Mes y Mostrar Recompensa
+    </button>
+
+    <h3 class="fade-in" style="margin-top: 30px;">📋 <span style="color:#000;">Historial de Recompensas</span></h3>
+    <table id="tabla-recompensas" class="fade-in" style="width: 100%; margin-top: 10px; border-collapse: collapse;">
+      <thead>
+        <tr style="background-color: #ffe4e1;">
+          <th>Nombre</th>
+          <th>Puntos</th>
+          <th>Recompensa</th>
+          <th>Fecha</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Se inserta desde JS -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

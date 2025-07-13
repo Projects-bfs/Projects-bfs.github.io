@@ -1,0 +1,106 @@
+body {
+  font-family: 'Comic Neue', cursive;
+  background-color: #fff0f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(255, 192, 203, 0.4);
+  padding: 30px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  border: 4px dashed #ffb6c1;
+}
+
+h1 {
+  font-size: 28px;
+  color: #d63384;
+  margin-bottom: 25px;
+}
+
+.player1 h2 {
+  color: #ff69b4;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.player2 h2 {
+  color: #0940f1;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.player p {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+button {
+  background-color: #77dd77;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  padding: 12px 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background-color: #66cdaa;
+}
+
+#resultados {
+  margin-top: 0px;
+  background-color: #ffe4e1;
+  padding: 15px;
+  border-radius: 15px;
+  border: 2px solid #ffb6c1;
+}
+
+#resultados h3 {
+  color: #c71585;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+table, th, td {
+  border: 1px solid #ffc0cb;
+  text-align: center;
+  padding: 8px;
+  font-size: 15px;
+}
+
+th {
+  color: #d63384;
+}
+
+/* Animación fadeInUp */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeInUp 0.8s ease-out both;
+}
